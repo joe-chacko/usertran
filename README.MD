@@ -5,9 +5,9 @@ and insert it into a known location in JNDI.
 
 ## Instructions
 
-To run the sample, invoke `./gradle clean libertyStart`.
+To run the sample, invoke `./gradlew clean libertyStart`.
 
-To stop the server again, invoke `./gradle libertyStop`.
+To stop the server again, invoke `./gradlew libertyStop`.
 
 To verify it ran correctly, find the `messages.log` file and search for the string `usertran`.
 
