@@ -19,8 +19,8 @@ plugins {
 version '1.0-SNAPSHOT'
 group 'com.acme'
 
-sourceCompatibility = 21
-targetCompatibility = 21
+sourceCompatibility = 8
+targetCompatibility = 8
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
@@ -30,8 +30,9 @@ repositories {
 }
 
 dependencies {
-    // provided dependencies
-    providedCompile 'jakarta.platform:jakarta.jakartaee-api:10.0.0'
+
+    providedCompile 'io.openliberty.features:servlet-4.0:23.0.0.12'
+    providedCompile 'io.openliberty.features:cdi-2.0:23.0.0.12'
 }
 
 clean.dependsOn 'libertyStop'

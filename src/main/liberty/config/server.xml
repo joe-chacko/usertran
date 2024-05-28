@@ -13,6 +13,8 @@
 -->
 <server description="sample server">
     <featureManager>
-        <feature>restfulWS-3.1</feature>
+        <feature>servlet-4.0</feature>
+        <feature>jndi-1.0</feature>
+        <feature>cdi-2.0</feature>
     </featureManager>
 </server>
